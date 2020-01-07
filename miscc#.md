@@ -1,3 +1,22 @@
+# Misc. C# Stuff
+
+Just a couple things to wrap up core C# features.
+
+**Table of Contents**
+* [Enums](#Enums)
+* [Structs](#Structs)
+* [Interfaces](Interfaces)
+* [Generics](#Generics)
+* [Resources](#Resources)
+
+## Enums
+
+
+
+## Structs
+
+
+
 ```C#
 public interface Example {
   int amount;
