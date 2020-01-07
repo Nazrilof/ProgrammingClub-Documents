@@ -3,15 +3,36 @@
 Just a couple things to wrap up core C# features.
 
 **Table of Contents**
+* [Casting](#Casting)
 * [Enums](#Enums)
 * [Structs](#Structs)
 * [Interfaces](Interfaces)
 * [Generics](#Generics)
 * [Resources](#Resources)
 
+## Casting
+
+Converting one datatype into another is known as type casting or, type-conversion. For example, if you want to store a 'long' value into a simple integer then you can type cast 'long' to 'int'. You can convert the values from one type to another explicitly using the cast operator as follows
+
+```C#
+<data_type> 
+```
+
 ## Enums
 
+The enum keyword is a new data-type pre-defined in C#. An enumeration is a set of named integer constants. An enumerated type is declared using the enum keyword. The value of the constant is always – unless directly specified otherwise – the position that the constant takes in the enum starting at zero. For example, if you had an enum with the data {The, Earth, Is, Flat}, the keyword The would give the value zero, Earth one, etc.
 
+An enum is defined with the following syntax:
+
+```C#
+enum <enum_name> { <List of items seperated by commas> };
+```
+
+For example, and enum that lists the days of the week would look like
+
+```C#
+enum Days { Sun, Mon, tue, Wed, thu, Fri, Sat };
+```
 
 ## Structs
 
