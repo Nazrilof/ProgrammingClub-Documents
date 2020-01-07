@@ -51,7 +51,25 @@ public class ExampleClass : Example {
 
 ## Generics
 
+Generics allow you to write a class or method that can work with any data type (integers, chars, etc.). For example, you could create an array that can hold any one type of data, which is specified when you want to use it later in your code. The following is a relatively simple application of this example.
 
+```C#
+public class MyGenericArray<T> {
+  private T[] array;
+
+  public MyGenericArray(int size) {
+     array = new T[size + 1];
+  }
+  public T getItem(int index) {
+     return array[index];
+  }
+  public void setItem(int index, T value) {
+     array[index] = value;
+  }
+}
+```
+
+When used in the code, the data type can be specified 
 
 ## Resources
 
