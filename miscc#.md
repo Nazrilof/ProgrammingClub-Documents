@@ -17,7 +17,7 @@ Just a couple things to wrap up core C# features.
 
 
 
-# Interfaces
+## Interfaces
 
 Interfaces allow you to specify names and data types of members of a class. Here's an example of a simple interface:
 
