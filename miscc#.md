@@ -36,7 +36,31 @@ enum Days { Sun, Mon, tue, Wed, thu, Fri, Sat };
 
 ## Structs
 
+Structures or **Structs** allow you to create a single variable that holds related data of various types. For example you may want to keep track of information about several books in a library. Each book may have the following attributes –
 
+* Title
+* Author
+* Genre
+
+A book structure may look as follows:
+
+```C#
+struct Books {
+   public string title;
+   public string author;
+   public string genre;
+};  
+```
+
+You can create many instances of a struct, just like with classes. A structure may be used in code as follows:
+
+```C#
+Books book1;
+
+book1.title = "The Way of Kings";
+book1.author = "Brandon Sanderson";
+book1.genre = "Epic Fantasy";
+```
 
 ## Interfaces
 
@@ -69,28 +93,6 @@ public class ExampleClass : Example {
   }
 }
 ```
-
-## Generics
-
-Generics allow you to write a class or method that can work with any data type (integers, chars, etc.). For example, you could create an array that can hold any one type of data, which is specified when you want to use it later in your code. The following is a relatively simple application of this example.
-
-```C#
-public class MyGenericArray<T> {
-  private T[] array;
-
-  public MyGenericArray(int size) {
-     array = new T[size + 1];
-  }
-  public T getItem(int index) {
-     return array[index];
-  }
-  public void setItem(int index, T value) {
-     array[index] = value;
-  }
-}
-```
-
-When used in the code, the data type can be specified 
 
 ## Resources
 
